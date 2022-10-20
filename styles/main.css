@@ -3,6 +3,34 @@
     padding:0;
     font-family: 'Kanit', sans-serif;
 }
+body::-webkit-scrollbar{
+    width:8px;
+}
+body::-webkit-scrollbar-track{
+   background-color:darkgray;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #FF500A;
+    border-radius:10px;
+}
+.scroll-button{
+    width:35px;
+    height:35px;
+    background-color: #FF500A;
+    position:fixed;
+    z-index: 500;
+    bottom:20px;
+    right:20px;
+    border:none;
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-angle-up{
+    color:white;
+}
+
 .main-header-outer{
     width:100%;
     height:90px;
@@ -138,12 +166,55 @@
 .round-button-outer > button:hover > i{
     color:#FF500A;
 }
-
 .fa-phone{
     color:white;
 }
 .contact-text{
     color:#FF500A;
 }
-
 /*landing slider styles*/
+
+/*Service styles*/
+.service-outer{
+    width:100%;
+    height:auto;
+  /*  border: 1px solid red;*/
+}
+.service-header-text{
+    text-align: center;
+}
+.service-inner-wrapper{
+    width:100%;
+    height:700px;
+  /*  border: 1px solid red;*/
+    display:flex;
+    margin-top: 50px;
+}
+.service-inner{
+    height:500px;
+  /*  border: 1px solid red;*/
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+}
+.service-inner-context{
+  /*  border: 1px solid red;*/
+    flex: 1;
+}
+.service-title{
+    text-align: center;
+}
+.service-img {
+    text-align: center;
+}
+.service-img > svg{
+    width: 150px;
+    height:150px;
+}
+.service-desc{
+    color: darkslategray;
+    font-weight:lighter;
+    text-align:justify;
+}
+/*Service styles*/
